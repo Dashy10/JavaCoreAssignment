@@ -22,6 +22,9 @@ public class Main {
 		threadOne.start();
 		threadTwo.start();
 		
+		threadOne.join();
+		threadTwo.join();
+		
 //		display thread results
 		threadOne.display();
 		threadTwo.display();
